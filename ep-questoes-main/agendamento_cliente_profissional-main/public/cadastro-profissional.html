@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Profissional</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Cadastrar Profissional</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="cadastro-cliente.html">Cadastrar Cliente</a></li>
+                <li><a class="selecionado" href="cadastro-profissional.html">Cadastrar Profissional</a></li>
+                <li><a href="cadastro-agendamento.html">Cadastrar Agendamento</a></li>
+                <li><a href="consulta.html">Consultar Agendamentos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Formulário de Cadastro de Profissional</h2>
+        <form>
+            <div class="form-group">
+                <label for="Nome">Nome Completo:</label>
+                <input type="text" id="Nome" name="Nome" required>
+            </div>
+            <div class="form-group">
+                <label for="IdProfessor">Numro Id:</label>
+                <input type="num" id="IdProfessor" name="IdProfessor" required>
+            </div>
+            <div class="form-group">
+                <label for="documento">CPF:</label>
+                <input type="text" id="Cpf_professor" name="Cpf_professor" required>
+            </div>
+            <div class="form-group">
+                <label for="Email">E-mail:</label>
+                <input type="Email" id="Email" name="Email" required>
+            </div>
+            <div class="form-group">
+                <label for="Telefone">Telefone:</label>
+                <input type="Tel" id="Telefone" name="telefone" required>
+            </div>
+            <div class="form-group">
+                <label>Disponibilidade:</label>
+                <select id="Disponibilidade" name="Disponibilidade" required>
+                    <option value="">Selecione</option>
+                    <option value="integral">Integral</option>
+                    <option value="meio-periodo">Meio Período</option>
+                </select>
+            </div>
+            <button onclick="cadastrarProfissional()" type="submit">Cadastrar Profissional</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 - Sistema de Agendamento</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

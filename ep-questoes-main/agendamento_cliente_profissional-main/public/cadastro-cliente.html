@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Cliente</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Cadastrar Cliente</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a class="selecionado" href="cadastro-cliente.html">Cadastrar Cliente</a></li>
+                <li><a href="cadastro-profissional.html">Cadastrar Profissional</a></li>
+                <li><a href="cadastro-agendamento.html">Cadastrar Agendamento</a></li>
+                <li><a href="consulta.html">Consultar Agendamentos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Formulário de Cadastro de Cliente</h2>
+        <form>
+            <div class="form-group">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="form-group">
+                <label for="nome">Numero id:</label>
+                <input type="text" id="Idcliente" name="Id_cliente" required>
+            </div>
+            <div class="form-group">
+                <label for="documento">CPF:</label>
+                <input type="text" id="Cpf" name="Cpf" required>
+            </div>
+            <div class="form-group">
+                <label for="Data-nascimento">Data de Nascimento:</label>
+                <input type="date" id="Datanascimento" name="Data-nascimento" required>
+            </div>
+            <div class="form-group">
+                <label>Sexo:</label>
+                <select id="sexo" name="sexo" required>
+                    <option value="">Selecione</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="feminino">Feminino</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="Email">E-mail:</label>
+                <input type="Email" id="Email" name="Email" required>
+            </div>
+            <div class="form-group">
+                <label for="Telefone">Telefone:</label>
+                <input type="Tel" id="Telefone" name="telefone" required>
+            </div>
+            <div class="form-group">
+                <label>Forma de Pagamento:</label>
+                <select id="pagamento" name="pagamento" required>
+                    <option value="cartao">Cartão de Crédito</option>
+                    <option value="boleto">Boleto Bancário</option>
+                    <option value="dinheiro">Dinheiro</option>
+                    <option value="pix">Pix</option>
+                </select>
+            </div>
+            <button onclick="cadastrarCliente()" type="submit">Cadastrar Cliente</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 - Sistema de Agendamento</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
+

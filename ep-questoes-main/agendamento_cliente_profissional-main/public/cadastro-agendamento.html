@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Agendamento</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Cadastrar Agendamento</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="cadastro-cliente.html">Cadastrar Cliente</a></li>
+                <li><a href="cadastro-profissional.html">Cadastrar Profissional</a></li>
+                <li><a class="selecionado" href="cadastro-agendamento.html">Cadastrar Agendamento</a></li>
+                <li><a href="consulta.html">Consultar Agendamentos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Formulário de Cadastro de Agendamento</h2>
+        <form id="formCadastroAgendamento">
+            <div class="form-group">
+                <label for="Id_cliente">Id do Cliente:</label>
+                <input type="text" id="Id_cliente" name="Id_cliente" placeholder="Id_cliente" required />
+            </div>
+
+            <div class="form-group">
+                <label for="Id_Professor">Id do Professor:</label>
+                <input type="text" id="Id_Professor" name="Id_Professor" placeholder="Id_Professor" required />
+            </div>
+
+            <div class="form-group">
+                <label for="dataAgendamento">Data:</label>
+                <input type="date" id="dataAgendamento" name="data" required />
+            </div>
+
+            <div class="form-group">
+                <label for="horarioAgendamento">Horário:</label>
+                <input type="time" id="horarioAgendamento" name="horario" required />
+            </div>
+
+            <div class="form-group">
+                <label for="salaAgendamento">Sala:</label>
+                <select id="salaAgendamento" name="salaAgendamentoa" required>
+                    <option value="">Selecione a sala</option>
+                    <option value="presencial">1</option>
+                    <option value="online">2</option>
+                    <option value="online">3</option>
+                    <option value="online">4</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="observacoes">Observações:</label>
+                <textarea id="observacoes" name="observacoes" rows="4" placeholder="Adicione observações adicionais"></textarea>
+            </div>
+
+            <button onclick="cadastrarAgendamento()" type="submit">Cadastrar Agendamento</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 - Sistema de Agendamento</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
